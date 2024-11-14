@@ -26,6 +26,9 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         // You can create header for each section and for table view as well.
+        
+        // for Header view
+        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
     }
     
     // Step 3 to give frames
