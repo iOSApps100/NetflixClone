@@ -28,7 +28,8 @@ class HomeViewController: UIViewController {
         // You can create header for each section and for table view as well.
         
         // for Header view
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
     }
     
     // Step 3 to give frames
